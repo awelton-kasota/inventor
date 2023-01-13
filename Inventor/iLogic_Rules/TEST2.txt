@@ -1,0 +1,1 @@
+﻿iProperties.Value("Custom","TEST") = Round(iProperties.Volume/1728, 3)

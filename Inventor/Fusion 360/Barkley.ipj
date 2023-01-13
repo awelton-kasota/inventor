@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-16" standalone="no" ?>
+<InventorProject contentcenterguid="awj6p2hp5f2zk3s6455z65y3nl" schemarevid="14">
+
+  <AddInConfigs>
+    <AutodeskIntent configguid="aaaaaaaaaaaaaaaaaaaaaaaaaa"/>
+  </AddInConfigs>
+
+  <ProjectOptions>
+    <ProjectType>None</ProjectType>
+    <IncludedProject></IncludedProject>
+    <OldVersionsToKeepOnSave>0</OldVersionsToKeepOnSave>
+    <UsingUniqueFilenames>Yes</UsingUniqueFilenames>
+    <Owner></Owner>
+    <ReleaseID></ReleaseID>
+    <ImportedCompFolder>Imported Components</ImportedCompFolder>
+    <ImportedAsmFolder>Imported Components</ImportedAsmFolder>
+  </ProjectOptions>
+
+  <AppearanceProteinLibraries>
+    <ProteinLibrary>
+      <Path></Path>
+      <ProteinLibraryType>1</ProteinLibraryType>
+      <ActiveProteinLibrary>0</ActiveProteinLibrary>
+    </ProteinLibrary>
+    <ProteinLibrary>
+      <Path></Path>
+      <ProteinLibraryType>2</ProteinLibraryType>
+      <ActiveProteinLibrary>0</ActiveProteinLibrary>
+    </ProteinLibrary>
+    <ProteinLibrary>
+      <Path></Path>
+      <ProteinLibraryType>3</ProteinLibraryType>
+      <ActiveProteinLibrary>1</ActiveProteinLibrary>
+    </ProteinLibrary>
+  </AppearanceProteinLibraries>
+
+  <PhysicalProteinLibraries>
+    <ProteinLibrary>
+      <Path></Path>
+      <ProteinLibraryType>2</ProteinLibraryType>
+      <ActiveProteinLibrary>0</ActiveProteinLibrary>
+    </ProteinLibrary>
+    <ProteinLibrary>
+      <Path></Path>
+      <ProteinLibraryType>3</ProteinLibraryType>
+      <ActiveProteinLibrary>1</ActiveProteinLibrary>
+    </ProteinLibrary>
+  </PhysicalProteinLibraries>
+
+  <ProjectPaths>
+    <ProjectPath pathtype="Workspace">
+      <PathName>Workspace</PathName>
+      <Path>C:\Users\awelt\Fusion\Barkley</Path>
+    </ProjectPath>
+  </ProjectPaths>
+
+  <FolderOptions>
+    <DesignDataFolder>
+      <UseStylesFolder>Read Only</UseStylesFolder>
+    </DesignDataFolder>
+    <ContentCenterFolder>
+      <ContentCenterConfig>
+        <ConfiguredLibraries>
+          <Library DisplayName="Inventor ANSI" InternalName="7c4b738e-bdd6-4b6b-8700-5bf288a284c0" IsReadOnly="True" LibraryAttachName="Inventor ANSI" ServerName="localhost"/>
+          <Library DisplayName="Inventor DIN" InternalName="8b22eb12-e4e8-449b-a97b-ae3d5bbbfd12" IsReadOnly="True" LibraryAttachName="Inventor DIN" ServerName="localhost"/>
+          <Library DisplayName="Inventor Feature" InternalName="4367dfbc-f228-49f6-b4da-1a8b0df49d3f" IsReadOnly="True" LibraryAttachName="Inventor Feature" ServerName="localhost"/>
+          <Library DisplayName="Inventor ISO" InternalName="2558d7ef-04ac-43eb-8a44-e3748e516d14" IsReadOnly="True" LibraryAttachName="Inventor ISO" ServerName="localhost"/>
+          <Library DisplayName="Inventor JIS &amp; GB" InternalName="42d3d0d7-3c4b-4ae9-970d-954ebb779482" IsReadOnly="True" LibraryAttachName="Inventor JIS &amp; GB" ServerName="localhost"/>
+          <Library DisplayName="Inventor OTHER" InternalName="271cc27b-14af-45c8-8686-bc036143cde5" IsReadOnly="True" LibraryAttachName="Inventor OTHER" ServerName="localhost"/>
+          <Library DisplayName="Inventor Parker" InternalName="e759e04d-3827-4431-81a2-046642bff133" IsReadOnly="True" LibraryAttachName="Inventor Parker" ServerName="localhost"/>
+          <Library DisplayName="Inventor GOST" InternalName="5d735970-f300-11db-8314-0800200c9a66" IsReadOnly="True" LibraryAttachName="Inventor GOST" ServerName="localhost"/>
+          <Library DisplayName="Inventor Sheet Metal" InternalName="0ec56ebe-3a6e-11dc-8314-0800200c9a66" IsReadOnly="True" LibraryAttachName="Inventor Sheet Metal" ServerName="localhost"/>
+          <Library DisplayName="Routed Systems Other" InternalName="92f6856b-8619-4dbf-ac8b-636b5161eabb" IsReadOnly="True" LibraryAttachName="Routed Systems Other" ServerName="localhost"/>
+          <Library DisplayName="Inventor Mold Imperial" InternalName="51dd6d3f-f272-4019-a724-002be458a6de" IsReadOnly="True" LibraryAttachName="Inventor Mold Imperial" ServerName="localhost"/>
+          <Library DisplayName="Inventor Mold Meusburger" InternalName="512f8b67-01f6-4de7-9c9d-0e6cc2b64fb6" IsReadOnly="True" LibraryAttachName="Inventor Mold Meusburger" ServerName="localhost"/>
+          <Library DisplayName="Inventor Mold Metric" InternalName="22c81190-8bba-44ee-94bd-e4dfe60d0815" IsReadOnly="True" LibraryAttachName="Inventor Mold Metric" ServerName="localhost"/>
+          <Library DisplayName="Inventor IDF" InternalName="f436ed6d-3e79-40c4-95f7-ef53c8feba9e" IsReadOnly="True" LibraryAttachName="AI2017_Inventor IDF" ServerName="localhost"/>
+        </ConfiguredLibraries>
+      </ContentCenterConfig>
+    </ContentCenterFolder>
+  </FolderOptions>
+
+  <VaultOptions>
+    <VaultServer></VaultServer>
+    <VaultDatabase></VaultDatabase>
+    <VaultVirtualFolder></VaultVirtualFolder>
+    <PublishFolder></PublishFolder>
+  </VaultOptions>
+
+  <CustomSelections/>
+
+</InventorProject>

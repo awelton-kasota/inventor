@@ -1,0 +1,6 @@
+﻿If AutoSaveTrigger >= 100 Then
+AutoSaveTrigger = 0
+ThisDoc.Save
+Else
+Trigger += 1
+End If
