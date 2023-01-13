@@ -1,0 +1,46 @@
+﻿' Get the current Part document.
+Dim partDoc As PartDocument = ThisDoc.Document
+
+' Get the TransientBRep and TransientGeometry objects.
+Dim transBRep As TransientBRep = ThisApplication.TransientBRep
+Dim transGeom As TransientGeometry = ThisApplication.TransientGeometry
+
+' Combine all bodies in Part into a single transient Surface Body.
+Dim combinedBodies As SurfaceBody = Nothing
+For Each surfBody As SurfaceBody In partDoc.ComponentDefinition.SurfaceBodies
+	If combinedBodies Is Nothing Then
+		combinedBodies = transBRep.Copy(surfBody)
+	Else
+		transBRep.DoBoolean(combinedBodies, surfBody, BooleanTypeEnum.kBooleanTypeUnion)
+	End If
+Next
+
+' Get the oriented mininum range box of all bodies in Part.
+' NOTE: "OrientedMinimumRangeBox" was added in Inventor 2020.3/2021. 
+Dim minBox As OrientedBox = combinedBodies.OrientedMinimumRangeBox
+
+' Get length of each side of mininum range box.
+Dim dir1 As Double = minBox.DirectionOne.Length
+Dim dir2 As Double = minBox.DirectionTwo.Length
+Dim dir3 As Double = minBox.DirectionThree.Length
+
+' Convert lengths to inches.
+Dim uom As UnitsOfMeasure = partDoc.UnitsOfMeasure
+
+dir1 = uom.ConvertUnits(dir1, "cm", "in")
+dir2 = uom.ConvertUnits(dir2, "cm", "in")
+dir3 = uom.ConvertUnits(dir3, "cm", "in")
+
+' Sort lengths from smallest to largest.
+Dim lengths As New List(Of Double) From {dir1, dir2, dir3 }
+lengths.Sort
+
+Dim minLength As Double = lengths(0)
+Dim midLength As Double = lengths(1)
+Dim maxLength As Double = lengths(2)
+
+' Store lengths and volume to custom iproperties
+iProperties.Value("Custom", "BoundingBL1") = RoundToFraction(minLength, 1/16, RoundingMethod.Round)
+iProperties.Value("Custom", "BoundingBL2") = RoundToFraction(midLength, 1/16, RoundingMethod.Round)
+iProperties.Value("Custom", "BoundingBL3") = RoundToFraction(maxLength, 1/16, RoundingMethod.Round)
+iProperties.Value("Custom", "BoundingCF") = Round((minLength * midLength * maxLength) / 1728, 3)
